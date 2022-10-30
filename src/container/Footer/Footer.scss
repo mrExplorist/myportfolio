@@ -1,0 +1,143 @@
+.app__footer {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.subtitle {
+  padding-bottom: 1rem;
+  color: var(--gray-color);
+  font-weight: 500;
+
+  @media screen and (max-width: 800px) {
+    font-size: 0.8rem;
+    width: 50%;
+    margin: auto;
+    span {
+      display: none;
+    }
+  }
+}
+.app__footer-cards {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  // margin: 4rem 2rem 2rem;
+  margin: auto;
+  .app__footer-card {
+    min-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 1rem 0;
+    padding: 1rem;
+
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fef4f5;
+
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 0.7rem;
+    }
+    p {
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px #fef4f5;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #55198b;
+  padding: 1.25rem;
+  a {
+    color: var(--white-color);
+    margin-left: 1.25rem;
+  }
+  &:hover {
+    // background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    margin-left: 1.3rem;
+  }
+}
+.app__footer-cards .app__footer-card:first-child {
+  background-color: #f2f7fb;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: column;
+  // margin: 1rem 2rem;
+
+  margin: auto;
+  div {
+    width: 100%;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: var(--primary-color);
+
+      font-family: var(--font-base);
+      color: var(--secondary-color);
+      outline: none;
+    }
+    textarea {
+      height: 170px;
+    }
+    &:hover {
+      box-shadow: 0 0 25px var(--primary-color);
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--white-color);
+    font-weight: 500;
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
