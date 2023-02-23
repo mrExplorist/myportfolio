@@ -29,7 +29,6 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            {/* <span>👋</span> */}
             <span className="wave-emoji">{emoji("👋")}</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hi all, I am </p>
@@ -39,7 +38,6 @@ const Header = () => {
 
           <div className="tag-cmp  app__flex">
             <p className="p-text ">
-              {" "}
               A passionate Full Stack Software Developer having an experience of
               building Web and Mobile applications with JavaScript / Reactjs /
               Nodejs / React Native and some other cool frontend as well as

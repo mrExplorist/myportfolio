@@ -43,7 +43,7 @@ const Work = () => {
     <>
       <h2 className="head-text">
         My <span>Portfolio </span>
-        Section 
+        Section
       </h2>
       <div className="app__work-filter">
         {["BlockChain", "Web App", "React Native", "Dev-Ops", "All"].map(
@@ -116,7 +116,7 @@ const Work = () => {
                 {work.description}
               </p>
 
-              <div className="app__work-tag app__flex">
+              <div className="app__work-tag app__flex style={{justifyContent }}">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
             </div>

@@ -8,20 +8,25 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Python Programming", //Insert stack or technology you have experience in
-      progressPercentage: "60%", //Insert relative proficiency in percentage
+      Stack: "frontend",
+      progressPercentage: "75%",
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%",
+      progressPercentage: "60%",
     },
     {
-      Stack: "BlockChain",
-      progressPercentage: "50%",
+      Stack: "Python Programming", //Insert stack or technology you have experience in
+      progressPercentage: "60%", //Insert relative proficiency in percentage
     },
+
     {
       Stack: "DevOps",
-      progressPercentage: "55%",
+      progressPercentage: "30%",
+    },
+    {
+      Stack: "DSA",
+      progressPercentage: "30%",
     },
   ],
   displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false

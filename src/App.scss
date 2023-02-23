@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
@@ -86,6 +88,7 @@
 }
 .sp-text {
   font-family: GTWalsheimPro;
+  // font-family: "DM Sans", sans-serif;
   color: var(--secondary-color);
   font-weight: 300;
 }

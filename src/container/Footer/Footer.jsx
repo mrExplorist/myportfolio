@@ -124,6 +124,13 @@ const Footer = () => {
           </h3>
         </div>
       )}
+
+      <p
+        className="sp-text "
+        style={{ textAlign: "center", marginTop: "50px", fontSize: "16px" }}
+      >
+        Made with ❤ by Lalit Sharma
+      </p>
     </>
   );
 };
