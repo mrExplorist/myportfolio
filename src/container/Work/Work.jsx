@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
 import "./Work.scss";
+
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import React, { useEffect, useState } from "react";
 import { client, urlFor } from "../../client";
-import emoji from "react-easy-emoji";
-import { AppWrap, MotionWrap } from "../../wrapper";
+
+import { AppWrap } from "../../wrapper";
+import { motion } from "framer-motion";
+
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -35,10 +37,11 @@ const Work = () => {
       if (item === "All") {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works?.filter((work) => work.tags.includes(item)));
       }
     }, 500);
   };
+
   return (
     <>
       <h2 className="head-text">
@@ -117,7 +120,7 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex style={{justifyContent }}">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work.tags[0]} </p>
               </div>
             </div>
           </div>
