@@ -22,6 +22,8 @@ import redux from "../assets/images/redux.png";
 import sass from "../assets/images/sass.png";
 import typescript from "../assets/images/typescript.png";
 import vue from "../assets/images/vue.png";
+import linux from "../assets/images/linux.png";
+import mongodb from "../assets/images/database.jpg";
 
 import about01 from "../assets/images/about01.png";
 import about02 from "../assets/images/about02.png";
@@ -56,6 +58,7 @@ export default {
   flutter,
   git,
   graphql,
+  mongodb,
   html,
   javascript,
   mu5,
@@ -80,4 +83,5 @@ export default {
   nb,
   skype,
   spotify,
+  linux,
 };

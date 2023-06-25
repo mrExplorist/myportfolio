@@ -11,24 +11,39 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <FaLinkedin />
+        <a
+          href="https://www.linkedin.com/in/pinglalit/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin />
+        </a>
       </div>
       <div>
-        <BsTwitter />
-      </div>
-      <div>
-        <FaStackOverflow />
+        <a
+          href="https://twitter.com/Mr_Explorist"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsTwitter />
+        </a>
       </div>
 
       <div>
-        <FaGithub />
+        <a
+          href="https://github.com/mrExplorist"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub />
+        </a>
       </div>
-      <div>
+      {/* <div>
         <FaMedium />
       </div>
       <div>
         <FaDev />
-      </div>
+      </div> */}
     </div>
   );
 };
